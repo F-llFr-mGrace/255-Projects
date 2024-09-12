@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -9,6 +10,7 @@ public class BouncerScript : MonoBehaviour
     [SerializeField] TextMeshProUGUI textSpeech;
 
     int age;
+    string[] thingsToSay = new string[4] {"Get out of here!", "You're too young", "Come on in!", "Enjoy your time"};
 
     void Start()
     {
@@ -17,7 +19,7 @@ public class BouncerScript : MonoBehaviour
 
     public void NewAge()
     {
-        age = Random.Range(0, 50);
+        age = UnityEngine.Random.Range(0, 50);
         textAge.text = age.ToString();
         textSpeech.text = "I am the Bouncer!";
     }
@@ -26,11 +28,13 @@ public class BouncerScript : MonoBehaviour
     {
         if (age < 21)
         {
-            textSpeech.text = "You are too young!";
+            var index = UnityEngine.Random.Range(0, 2);
+            textSpeech.text = thingsToSay[index];
         }
         else
         {
-            textSpeech.text = "Have fun!";
+            var index = UnityEngine.Random.Range(2, 4);
+            textSpeech.text = thingsToSay[index];
         }
         
     }

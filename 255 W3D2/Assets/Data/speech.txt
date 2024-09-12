@@ -1,0 +1,4 @@
+Speech file :3
+Hello!
+How are you?
+What can I do for you tonight?
