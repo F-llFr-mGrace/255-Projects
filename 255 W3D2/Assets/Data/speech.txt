@@ -1,4 +1,6 @@
 Speech file :3
-Hello!
-How are you?
-What can I do for you tonight?
+Good evening!
+Welcome to Copper Turret.
+Here is our menu with our daily specials.
+Do you have any allergies?
+Let me know when you're ready to order.
